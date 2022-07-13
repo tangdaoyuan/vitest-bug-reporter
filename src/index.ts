@@ -1,1 +1,1 @@
-export default 'typescript-starter'
+export default 'vitest-bug-reporter'

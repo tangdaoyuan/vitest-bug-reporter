@@ -20,7 +20,7 @@
       "@/*": [
         "src/*"
       ],
-      "typescript-starter/*": [
+      "@suger-tdy/vitest-bug-reporter/*": [
         "dist/*"
       ]
     }

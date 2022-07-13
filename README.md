@@ -1,3 +1,3 @@
-# typescript-starter
-> 
-> My starter project for typescript.
+# vitest-bug-reporter
+
+> vitest-bug-reporter.
