@@ -1,1 +1,6 @@
-export default 'vitest-bug-reporter'
+import bindings from 'bindings'
+
+export function invoke() {
+  const hello = bindings('hello')
+  return hello.hello()
+}

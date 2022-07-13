@@ -1,5 +1,6 @@
 import { expect, it } from 'vitest'
+import { invoke } from '@'
 
 it('runs', () => {
-  expect(true).toBe(true)
+  expect(invoke()).toBe('world')
 })

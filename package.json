@@ -38,17 +38,23 @@
     "stub": "unbuild --stub",
     "build": "unbuild",
     "prepublishOnly": "pnpm run build",
-    "release": "bumpp --tag --commit --push && pnpm publish"
+    "release": "bumpp --tag --commit --push && pnpm publish",
+    "configure": "node-gyp configure",
+    "build:lib": "node-gyp rebuild",
+    "prebuild": "prebuild -r napi --verbose"
   },
   "bugs": {
     "url": "https://github.com/tangdaoyuan/vitest-bug-reporter/issues"
   },
   "homepage": "https://github.com/tangdaoyuan/vitest-bug-reporter#readme",
   "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^5.0.0",
     "picocolors": "^1.0.0"
   },
   "devDependencies": {
     "@suger-tdy/eslint-config": "1.1.7",
+    "@types/bindings": "^1.5.1",
     "bumpp": "8.2.1",
     "esbuild": "0.14.49",
     "eslint": "8.19.0",
