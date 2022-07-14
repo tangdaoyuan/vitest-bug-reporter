@@ -1,6 +1,6 @@
 import { expect, it } from 'vitest'
 import { invoke } from '@'
 
-it('runs', () => {
-  expect(invoke()).toBe('world')
+it('runs', async() => {
+  expect(await invoke()).toBeDefined()
 })

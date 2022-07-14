@@ -43,14 +43,21 @@
     "build:lib": "node-gyp rebuild",
     "prebuild": "prebuild -r napi --verbose"
   },
+  "binary": {
+    "napi_versions": [
+      3
+    ]
+  },
   "bugs": {
     "url": "https://github.com/tangdaoyuan/vitest-bug-reporter/issues"
   },
   "homepage": "https://github.com/tangdaoyuan/vitest-bug-reporter#readme",
   "dependencies": {
     "bindings": "^1.5.0",
+    "drivelist": "^11.0.0",
     "node-addon-api": "^5.0.0",
-    "picocolors": "^1.0.0"
+    "picocolors": "^1.0.0",
+    "prebuild-install": "^7.1.1"
   },
   "devDependencies": {
     "@suger-tdy/eslint-config": "1.1.7",
@@ -58,6 +65,7 @@
     "bumpp": "8.2.1",
     "esbuild": "0.14.49",
     "eslint": "8.19.0",
+    "prebuild": "^11.0.3",
     "tsx": "3.7.1",
     "typescript": "4.7.4",
     "unbuild": "0.7.4",
